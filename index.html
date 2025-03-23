@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio | Python | Django | Djangorestframework</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h3>Er Golay</h3>
+        </div>
+        <nav>
+            <ul class="link-menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">My Work</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Downloads</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="start">
+            <h1>Pythonista</h1>
+            <h2>Web Developer & AI Enthusiast</h2>
+            <div class="social-links-list">
+                <a href=""><span><i class="fa fa-envelope"></i></span></a>
+                <a href=""><span><i class="fa-brands fa-facebook"></i></span></a>
+                <a href=""><span><i class="fa-brands fa-tiktok"></i></span></a>
+                <a href=""><span><i class="fa-brands fa-linkedin"></i></span></a>
+                <a href=""><span><i class="fa-brands fa-github"></i></span></a>
+            </div>
+            <!-- social links list ends -->
+            <p class="text-generator left-swift tdelay-5"><span id="text-generated"></span><span class="eraser"></span>
+            </p>
+            <div class="action-btn">
+                <button class="my-btn btn1">
+                    <img src="assets/icons/download_24dp_FFF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="20">
+                    <span>Resume</span>
+                </button>
+                <button class="my-btn btn2">
+                    <img src="assets/icons/call_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="20">
+                    <span>Contact Me</span>
+                </button>
+            </div>
+        </div>
+        <div class="end">
+            <video id="myvideo" src="assets/Amazing Animated Logo Intro Video -  Black And White Animation Intro Template.mp4" autoplay muted loop>
+                Your browser does not support the video tag!
+            </video>
+            <p>demo intro video</p>
+
+        </div>
+    </section>
+    <section class="about">
+        <h2 class="title">About Me</h2>
+        <div class="my-container">
+            <div class="desc-section">
+                <div class="sect-1">
+                    <h3>Namaste!</h3>
+                    <p>
+                        I'm Himal Gole, a web developer passionate about developing and imlementing the fabulous
+                        concepts in web technology and human needs.</p>
+                    <p>With 2 years of experience, my extertise can span all
+                        the development skills a good web software really needs.
+                    </p>
+                    <div class="plate-list">
+                        <span class="plate">Introvert</span>
+                        <span class="plate">90s kid</span>
+                        <span class="plate">Optimist</span>
+                        <span class="plate">Geek</span>
+                    </div>
+                </div>
+                <div class="sect-2">
+                    <div class="panel">
+                        <img src="assets/icons/location_on_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt=""
+                            height="28">
+                        <div class="label">
+                            <span style="font-weight: 600; font-size: 13px;">Address</span>
+                            <span style="font-size: 13px;">Thori, Nepal</span>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <img src="assets/icons/bloodtype_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="28">
+                        <div class="label">
+                            <span style="font-weight: 600; font-size: 13px;">Blood group</span>
+                            <span style="font-size: 13px;">O +ve</span>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <img src="assets/icons/school_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="28">
+                        <div class="label">
+                            <span style="font-weight: 600; font-size: 13px;">Education</span>
+                            <span style="font-size: 13px;">Bachelor's degree in computer engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outline-card">
+                <div class="panel">
+                    <div class="label">
+                        <span>Determined</span>
+                        <span class="value">80%</span>
+                    </div>
+                    <div class="progress" style="--val:8;"></div>
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>Curious</span>
+                        <span class="value">99%</span>
+                    </div>
+                    <div class="progress" style="--val:9.9;"></div>
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>Playful</span>
+                        <span class="value">70%</span>
+                    </div>
+                    <div class="progress" style="--val:7"></div>
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>Insecure</span>
+                        <span class="value">40%</span>
+                    </div>
+                    <div class="progress" style="--val:4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill">
+        <h2 class="title">Expertise</h2>
+        <div class="my-container">
+            <div class="chart">
+                <canvas id="radarChart"></canvas>
+            </div>
+            <div class="card">
+                <div class="top-title">
+                    Specific skills
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>HTML/CSS</span>
+                        <span class="value">90%</span>
+                    </div>
+                    <div class="progress" style="--val:9;"></div>
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>Javascript</span>
+                        <span class="value">80%</span>
+                    </div>
+                    <div class="progress" style="--val:8;"></div>
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>Python</span>
+                        <span class="value">80%</span>
+                    </div>
+                    <div class="progress" style="--val:8"></div>
+                </div>
+                <div class="panel">
+                    <div class="label">
+                        <span>Django</span>
+                        <span class="value">85%</span>
+                    </div>
+                    <div class="progress" style="--val:8.5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project">
+        <h2 class="title">Check Out</h2>
+        <div class="my-container" style="display: flex;justify-content: center;align-items: center;">
+            <p>Yet to be worked on this section</p>
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="title">Get In Touch</h2>
+        <div class="my-container">
+            <div class="card card1">
+                <div class="panel">
+                    <img src="assets/icons/bloodtype_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="28">
+                    <div class="label">
+                        <span style="font-weight: 600; font-size: 13px;">Email</span>
+                        <span style="font-size: 13px;">himalgole1122@gmail.com</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <img src="assets/icons/bloodtype_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="28">
+                    <div class="label">
+                        <span style="font-weight: 600; font-size: 13px;">Mob no.</span>
+                        <span style="font-size: 13px;">+977-9818813635</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <img src="assets/icons/location_on_24dp_62D2FF_FILL0_wght400_GRAD0_opsz24.png" alt="" height="28">
+                    <div class="label">
+                        <span style="font-weight: 600; font-size: 13px;">Address</span>
+                        <span style="font-size: 13px;">Thori,Nepal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <form action="" class="form-container">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Subject">
+                    <textarea name="" id="" placeholder="Type message"></textarea>
+                    <button type="submit">Despatch</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; Copyright 2025 Himal Gole</p> <p>All Rights Reserved.</p>
+        <div class="social-links-list">
+            <a href=""><span><i class="fa fa-envelope"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-facebook"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-tiktok"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-linkedin"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-github"></i></span></a>
+        </div>
+    </footer>
+    <script>
+        const ctx = document.getElementById('radarChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['FrontEnd', 'BackEnd', 'Database design', 'Problem solving', 'Communicative'],
+                datasets: [{
+                    label: 'General skills',
+                    data: [90, 80, 85, 99, 75],
+                    backgroundColor: 'transparent',
+                    borderColor: '#62d2ff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    r: {
+                        angleLines: { display: true },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="assets/js/textgenerator.js"></script>
+    <script src="assets/js/myscripts.js"></script>
+</body>
+
+</html>
