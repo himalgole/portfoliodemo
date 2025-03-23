@@ -566,8 +566,8 @@ section .title::after {
 }
 
 canvas {
-    max-width: 620px;
-    max-height: 620px;
+    max-width: 650px;
+    max-height: 650px;
 }
 
 .skill .my-container .card .progress::before {
